@@ -12,7 +12,7 @@ networkx (for tree maps)
 
 - Square:
 ```
-python sample_maps.py --size 3 --seed 5 --n_sample 10000 --maptype square \
+python sample_maps.py --size 3 --seed 3 --n_sample 10000 --maptype square \
 --label_path labels/imagenetsimple.json --out_dir results_map_local
 ```
 
@@ -46,6 +46,14 @@ python sample_maps.py --size 2 3 --seed 1 --n_sample 50 --maptype rectangle \
 --label_path labels/imagenetsimple.json --out_dir results_sizeinference 
 ```
 
+After sampling a map using one of the above commands, 
+you can further filter the map to contain a specific number of steps by running:
+```
+python sample_from_jsonl.py \
+--pred-file memory_local/type-square_size-3_seed-3_n-10000_label-imagenetsimple.jsonl \
+--nstep 8 --nsampled 200
+```
+
 ### Global map
 
 - Square:
@@ -66,3 +74,4 @@ python tree.py --size 9 --seed 9 --steps 4  --n_sample 100 \
 --maptype tree --label_path labels/imagenetsimple.json \
 --out_dir results_map_global --save_tree
 ```
+
