@@ -1,5 +1,5 @@
 # SpatialEvalLLM
-Code for "Evaluating Spatial Understanding of Large Language Models" TMLR 2024.
+Code for ["Evaluating Spatial Understanding of Large Language Models" TMLR 2024](https://arxiv.org/abs/2310.14540).
 
 ### Requirements
 ```
